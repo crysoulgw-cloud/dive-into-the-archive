@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///Users/alcoholik_im/Downloads/subphone_dashboard.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서브폰 교체 후보 8개</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0f0f11;
+    color: #e8e6e1;
+    font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    min-height: 100vh;
+    padding: 2rem 1.5rem;
+  }
+
+  .wrap { max-width: 960px; margin: 0 auto; }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: #f2f0eb;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    color: #6b6966;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .card {
+    background: #1a1a1e;
+    border: 1px solid #2a2a2e;
+    border-radius: 14px;
+    padding: 1.1rem 1.25rem;
+    transition: border-color 0.2s, transform 0.2s;
+    cursor: default;
+  }
+
+  .card.highlight {
+    border: 2px solid #4a90d9;
+    transform: translateY(-2px);
+  }
+
+  .card.featured {
+    border: 2px solid #4a90d9;
+  }
+
+  .card-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .num {
+    font-size: 11px;
+    font-weight: 600;
+    width: 22px;
+    height: 22px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .card-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #f2f0eb;
+    flex: 1;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 3px 9px;
+    border-radius: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .row {
+    display: flex;
+    gap: 7px;
+    align-items: flex-start;
+    margin-bottom: 6px;
+  }
+
+  .icon {
+    font-size: 14px;
+    margin-top: 1px;
+    flex-shrink: 0;
+  }
+
+  .row-text {
+    font-size: 12px;
+    color: #9a9896;
+    line-height: 1.55;
+  }
+
+  .price-row {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding-top: 9px;
+    margin-top: 4px;
+    border-top: 1px solid #2a2a2e;
+  }
+
+  .price {
+    font-size: 12px;
+    font-weight: 600;
+    color: #d4d2cd;
+  }
+
+  .price-icon { font-size: 13px; color: #555; }
+
+  /* badge / num colors */
+  .amber { background: #2e1f08; color: #d4891c; }
+  .blue  { background: #0a1f35; color: #4a90d9; }
+  .green { background: #0d2214; color: #3ca862; }
+  .gray  { background: #222226; color: #888; border: 1px solid #333; }
+  .red   { background: #2e0f0f; color: #d94a4a; }
+
+  /* decision flow */
+  .flow-wrap {
+    background: #141418;
+    border: 1px solid #2a2a2e;
+    border-radius: 14px;
+    padding: 1.1rem 1.25rem;
+  }
+
+  .flow-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: #c8c6c1;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .flow-title span { font-size: 16px; }
+
+  .flow-list { display: flex; flex-direction: column; gap: 5px; }
+
+  .flow-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 8px 12px;
+    background: #1a1a1e;
+    border: 1px solid #2a2a2e;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+    color: inherit;
+    font-family: inherit;
+    text-align: left;
+  }
+
+  .flow-btn:hover { background: #222228; border-color: #3a3a3e; }
+  .flow-btn.active { background: #0a1f35; border-color: #4a90d9; }
+
+  .flow-num {
+    font-size: 11px;
+    font-weight: 600;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #0a1f35;
+    color: #4a90d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .flow-label {
+    font-size: 12px;
+    color: #9a9896;
+    flex: 1;
+  }
+
+  .flow-arrow { font-size: 13px; color: #444; }
+
+  .flow-dest {
+    font-size: 12px;
+    font-weight: 600;
+    color: #4a90d9;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+    h1 { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>서브폰 교체 후보 8개</h1>
+  <p class="subtitle">기준: 노트20 울트라 256GB → 자급제·알뜰폰 / 512GB / 무게·폼팩터 / 회사앱·안드오토 / 사진 편집(촬영X) / 중고 가격</p>
+
+  <div class="grid">
+
+    <!-- 1. S23+ -->
+    <div id="c1" class="card">
+      <div class="card-head">
+        <span class="num amber">1</span>
+        <span class="card-name">Galaxy S23+ 512GB</span>
+        <span class="badge amber">가성비 중고</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#3ca862;">👍</span>
+        <span class="row-text">SD 8 Gen 2, 삼성 리마스터, 회사앱 안정성</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#d4891c;">⚠</span>
+        <span class="row-text">7년 업데이트 세대 아님 (Android 17 종료), 8GB RAM</span>
+      </div>
+      <div class="price-row">
+        <span class="price-icon">🏷</span>
+        <span class="price">45~55만 원</span>
+      </div>
+    </div>
+
+    <!-- 2. S24+ -->
+    <div id="c2" class="card featured">
+      <div class="card-head">
+        <span class="num blue">2</span>
+        <span class="card-name">Galaxy S24+ 512GB</span>
+        <span class="badge blue">현실적 정답</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#3ca862;">👍</span>
+        <span class="row-text">12GB RAM, 7년 업데이트, 삼성 AI·리마스터, 실무 안정성 최고</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#d4891c;">⚠</span>
+        <span class="row-text">70만 원대 이하 좋은 매물 기다려야</span>
+      </div>
+      <div class="price-row">
+        <span class="price-icon">🏷</span>
+        <span class="price">70~85만 원</span>
+      </div>
+    </div>
+
+    <!-- 3. S25 FE -->
+    <div id="c3" class="card">
+      <div class="card-head">
+        <span class="num green">3</span>
+        <span class="card-name">Galaxy S25 FE 512GB</span>
+        <span class="badge green">가성비 안정판</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#3ca862;">👍</span>
+        <span class="row-text">7년 업데이트, 190g, Exynos 2400, 45W 충전, 국내 AS</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#d4891c;">⚠</span>
+        <span class="row-text">8GB RAM, FHD+ 1080p</span>
+      </div>
+      <div class="price-row">
+        <span class="price-icon">🏷</span>
+        <span class="price">60~75만 원</span>
+      </div>
+    </div>
+
+    <!-- 4. S25+ -->
+    <div id="c4" class="card">
+      <div class="card-head">
+        <span class="num gray">4</span>
+        <span class="card-name">Galaxy S25+ 512GB</span>
+        <span class="badge gray">상위 안정판</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#3ca862;">👍</span>
+        <span class="row-text">Snapdragon 8 Elite, 12GB RAM, 190g, 7년 업데이트</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#d4891c;">⚠</span>
+        <span class="row-text">S24+ 대비 가격 프리미엄 큼</span>
+      </div>
+      <div class="price-row">
+        <span class="price-icon">🏷</span>
+        <span class="price">80~95만 원</span>
+      </div>
+    </div>
+
+    <!-- 5. S25 Edge -->
+    <div id="c5" class="card">
+      <div class="card-head">
+        <span class="num blue">5</span>
+        <span class="card-name">Galaxy S25 Edge 512GB</span>
+        <span class="badge blue">무게+편집 최적</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#3ca862;">👍</span>
+        <span class="row-text">163g, 12GB RAM, 8 Elite, QHD+ 평면, 7년 업데이트</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#d4891c;">⚠</span>
+        <span class="row-text">배터리 3900mAh (서브폰 무영향), 망원 없음 (촬영 안 함)</span>
+      </div>
+      <div class="price-row">
+        <span class="price-icon">🏷</span>
+        <span class="price">80~100만 원</span>
+      </div>
+    </div>
+
+    <!-- 6. S26+ -->
+    <div id="c6" class="card">
+      <div class="card-head">
+        <span class="num gray">6</span>
+        <span class="card-name">Galaxy S26+ 512GB</span>
+        <span class="badge gray">최신 안정판</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#3ca862;">👍</span>
+        <span class="row-text">최신 삼성 AI·갤러리, 7년 업데이트, 190g</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#d4891c;">⚠</span>
+        <span class="row-text">중고 매물 아직 얕음, 기다려야</span>
+      </div>
+      <div class="price-row">
+        <span class="price-icon">🏷</span>
+        <span class="price">110~130만 원</span>
+      </div>
+    </div>
+
+    <!-- 7. Nothing Phone 3 -->
+    <div id="c7" class="card">
+      <div class="card-head">
+        <span class="num red">7</span>
+        <span class="card-name">Nothing Phone 3 512GB</span>
+        <span class="badge red">감성 예외</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#3ca862;">👍</span>
+        <span class="row-text">디자인 신선함, 16GB RAM, Glyph Matrix</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#d4891c;">⚠</span>
+        <span class="row-text">218g (노트20 울트라보다 무거움), 삼성 리마스터 없음, 국내 미출시·AS 없음</span>
+      </div>
+      <div class="price-row">
+        <span class="price-icon">🏷</span>
+        <span class="price">65~80만 원 (직구)</span>
+      </div>
+    </div>
+
+    <!-- 8. Pixel 10 Pro -->
+    <div id="c8" class="card">
+      <div class="card-head">
+        <span class="num green">8</span>
+        <span class="card-name">Pixel 10 Pro 512GB</span>
+        <span class="badge green">사진 AI형</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#3ca862;">👍</span>
+        <span class="row-text">Google Photos AI·편집 최고, 16GB RAM, 7년 업데이트, 국내 AS</span>
+      </div>
+      <div class="row">
+        <span class="icon" style="color:#d4891c;">⚠</span>
+        <span class="row-text">6.3" 소형 폼팩터, 배터리 열화 초기 결함 보고</span>
+      </div>
+      <div class="price-row">
+        <span class="price-icon">🏷</span>
+        <span class="price">95~110만 원</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 의사결정 흐름 -->
+  <div class="flow-wrap">
+    <p class="flow-title"><span>⑂</span> 의사결정 흐름 — 클릭하면 해당 카드 강조</p>
+    <div class="flow-list">
+      <button class="flow-btn" onclick="hl([2], this)">
+        <span class="flow-num">1</span>
+        <span class="flow-label">70만 원대 매물 잡힘</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-dest">S24+ 512GB 중고</span>
+      </button>
+      <button class="flow-btn" onclick="hl([5], this)">
+        <span class="flow-num">2</span>
+        <span class="flow-label">무게 최우선 + 사진 편집 집중</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-dest">S25 Edge 512GB</span>
+      </button>
+      <button class="flow-btn" onclick="hl([3], this)">
+        <span class="flow-num">3</span>
+        <span class="flow-label">가성비 + 7년 업데이트</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-dest">S25 FE 512GB</span>
+      </button>
+      <button class="flow-btn" onclick="hl([1], this)">
+        <span class="flow-num">4</span>
+        <span class="flow-label">최저 가성비</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-dest">S23+ 512GB 중고</span>
+      </button>
+      <button class="flow-btn" onclick="hl([6], this)">
+        <span class="flow-num">5</span>
+        <span class="flow-label">돈으로 끝내기</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-dest">S26+ 512GB 특가</span>
+      </button>
+      <button class="flow-btn" onclick="hl([7,8], this)">
+        <span class="flow-num">6</span>
+        <span class="flow-label">감성 예외</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-dest">Nothing 3 / Pixel 10 Pro</span>
+      </button>
+      <button class="flow-btn" onclick="hl([8,5], this)">
+        <span class="flow-num">7</span>
+        <span class="flow-label">가격 내려올 때만</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-dest">Pixel 10 Pro / S25 Edge</span>
+      </button>
+    </div>
+  </div>
+
+</div>
+<script>
+  function hl(ids, btn) {
+    document.querySelectorAll('.card').forEach(c => {
+      if (c.classList.contains('featured')) {
+        c.style.border = '2px solid #4a90d9';
+        c.style.transform = 'none';
+      } else {
+        c.style.border = '1px solid #2a2a2e';
+        c.style.transform = 'none';
+      }
+    });
+    document.querySelectorAll('.flow-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    ids.forEach(n => {
+      const el = document.getElementById('c' + n);
+      if (el) {
+        el.style.border = '2px solid #4a90d9';
+        el.style.transform = 'translateY(-2px)';
+      }
+    });
+  }
+</script>
+
+
+</body></html>
