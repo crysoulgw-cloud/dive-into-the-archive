@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///Users/alcoholik_im/Downloads/subphone_complete_2.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서브폰 교체 후보 8개 — 완전 비교</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#0f0f11;color:#e8e6e1;font-family:-apple-system,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;}
+.header{padding:2rem 2rem 1.25rem;border-bottom:1px solid #1e1e22;}
+.header h1{font-size:24px;font-weight:600;color:#f2f0eb;letter-spacing:-.5px;margin-bottom:4px;}
+.header p{font-size:12px;color:#555;line-height:1.6;}
+.tabs{display:flex;gap:0;border-bottom:1px solid #1e1e22;padding:0 2rem;}
+.tab{padding:12px 18px;font-size:13px;font-weight:500;color:#666;cursor:pointer;border-bottom:2px solid transparent;transition:color .15s,border-color .15s;background:none;border-top:none;border-left:none;border-right:none;}
+.tab.active{color:#4a90d9;border-bottom-color:#4a90d9;}
+.tab:hover:not(.active){color:#aaa;}
+.tab-content{display:none;padding:1.5rem 2rem 2rem;}
+.tab-content.active{display:block;}
+h2{font-size:11px;font-weight:500;color:#555;margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid #1e1e22;text-transform:uppercase;letter-spacing:.4px;}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px;}
+.card{background:#1a1a1e;border:1px solid #2a2a2e;border-radius:14px;padding:1rem 1.1rem;transition:border .2s,transform .2s;}
+.card.feat{border:2px solid #4a90d9;}
+.ch{display:flex;align-items:center;gap:8px;margin-bottom:9px;}
+.num{font-size:11px;font-weight:600;width:20px;height:20px;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.cn{font-size:14px;font-weight:500;color:#f2f0eb;flex:1;}
+.badge{font-size:11px;padding:2px 8px;border-radius:20px;font-weight:500;white-space:nowrap;}
+.cr{display:flex;gap:7px;align-items:flex-start;margin-bottom:5px;}
+.ct{font-size:12px;color:#9a9896;line-height:1.5;}
+.pr{display:flex;align-items:center;gap:6px;padding-top:8px;margin-top:3px;border-top:1px solid #222;}
+.flow-box{background:#141418;border:1px solid #1e1e22;border-radius:14px;padding:1rem 1.25rem;}
+.flow-title{font-size:13px;font-weight:500;color:#c8c6c1;margin-bottom:10px;}
+.fl{display:flex;flex-direction:column;gap:5px;}
+.fb{display:flex;align-items:center;gap:10px;padding:8px 12px;background:#1a1a1e;border:1px solid #2a2a2e;border-radius:10px;cursor:pointer;color:inherit;font-family:inherit;text-align:left;transition:background .15s;width:100%;}
+.fb:hover{background:#222226;}
+.fb.act{background:#0a1f35;border-color:#4a90d9;}
+.fn{font-size:11px;font-weight:600;width:18px;height:18px;border-radius:50%;background:#0a1f35;color:#4a90d9;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.sec{margin-bottom:1.75rem;}
+.sh{font-size:13px;font-weight:500;color:#ddd;margin-bottom:3px;}
+.sd{font-size:11px;color:#555;margin-bottom:10px;line-height:1.5;}
+.br{display:flex;align-items:center;gap:10px;margin-bottom:5px;}
+.bn{font-size:12px;color:#888;width:76px;flex-shrink:0;}
+.bb{flex:1;background:#1e1e22;border-radius:3px;height:16px;overflow:hidden;}
+.bf{height:100%;border-radius:3px;}
+.bv{font-size:11px;font-weight:500;width:60px;text-align:right;flex-shrink:0;}
+.sr{display:flex;align-items:center;gap:10px;margin-bottom:5px;padding:7px 10px;background:#1a1a1e;border-radius:8px;}
+.chart-wrap{display:grid;grid-template-columns:340px 1fr;gap:2rem;align-items:start;}
+.chart-box{background:#141418;border:1px solid #1e1e22;border-radius:14px;padding:1.25rem;}
+.tw{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:1.5rem;}
+.tog{padding:5px 13px;border-radius:20px;border:1px solid #2a2a2e;background:#1a1a1e;cursor:pointer;font-size:12px;font-weight:500;color:#888;transition:all .15s;}
+.li{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;}
+.ld{width:9px;height:9px;border-radius:50%;flex-shrink:0;margin-top:4px;}
+.gh-section{margin-top:2rem;padding-top:1.5rem;border-top:1px solid #1e1e22;}
+.gh-box{background:#141418;border:1px solid #2a2a2e;border-radius:14px;padding:1.25rem;max-width:540px;}
+.gh-box p{font-size:12px;color:#888;line-height:1.6;margin-bottom:10px;}
+.gh-input{width:100%;padding:9px 12px;background:#1a1a1e;border:1px solid #2a2a2e;border-radius:8px;color:#e8e6e1;font-size:13px;font-family:monospace;margin:4px 0 10px;}
+.gh-input:focus{outline:none;border-color:#4a90d9;}
+.gh-btn{padding:9px 20px;background:#238636;border:1px solid #2ea043;border-radius:8px;color:#fff;font-size:13px;font-weight:500;cursor:pointer;}
+.gh-btn:hover{background:#2ea043;}
+.gh-btn:disabled{background:#333;border-color:#333;color:#666;cursor:not-allowed;}
+.gh-status{font-size:12px;margin-top:10px;line-height:1.6;}
+@media(max-width:700px){.grid{grid-template-columns:1fr;}.chart-wrap{grid-template-columns:1fr;}.header,.tabs,.tab-content{padding-left:1rem;padding-right:1rem;}}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>서브폰 교체 후보 8개 — 완전 비교</h1>
+  <p>기준: 노트20 울트라 256GB → 자급제·알뜰폰 / 512GB / 무게·폼팩터 / 회사앱·안드오토 / 사진 편집(촬영X) / 중고 가격<br>점수는 남균님 사용 목적 기준 5점 만점 · AnTuTu 수치는 참고치</p>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showTab(&#39;summary&#39;,this)">후보 요약</button>
+  <button class="tab" onclick="showTab(&#39;compare&#39;,this)">항목별 비교</button>
+  <button class="tab" onclick="showTab(&#39;radar&#39;,this)">레이더 차트</button>
+</div>
+
+<div id="tab-summary" class="tab-content active">
+  <div class="grid" id="cardGrid"><div id="c1" class="card"><div class="ch">
+    <span class="num" style="background:#2e1f08;color:#d4891c;">1</span>
+    <span class="cn">Galaxy S23+</span>
+    <span class="badge" style="background:#2e1f08;color:#d4891c;">가성비 중고</span>
+  </div>
+  <div class="cr"><span style="color:#3ca862;font-size:12px;flex-shrink:0;margin-top:1px;">↑</span><span class="ct">SD 8 Gen 2, 삼성 리마스터, 회사앱 안정성</span></div>
+  <div class="cr"><span style="color:#d4891c;font-size:12px;flex-shrink:0;margin-top:1px;">!</span><span class="ct">7년 업데이트 세대 아님 (Android 17 종료), 8GB RAM</span></div>
+  <div class="pr"><span style="color:#555;font-size:12px;">₩</span><span style="font-size:12px;font-weight:600;color:#d4d2cd;">45~55만 원</span></div></div><div id="c2" class="card feat"><div class="ch">
+    <span class="num" style="background:#0a1f35;color:#4a90d9;">2</span>
+    <span class="cn">Galaxy S24+</span>
+    <span class="badge" style="background:#0a1f35;color:#4a90d9;">현실적 정답</span>
+  </div>
+  <div class="cr"><span style="color:#3ca862;font-size:12px;flex-shrink:0;margin-top:1px;">↑</span><span class="ct">12GB RAM, 7년 업데이트, 삼성 AI·리마스터, 실무 안정성 최고</span></div>
+  <div class="cr"><span style="color:#d4891c;font-size:12px;flex-shrink:0;margin-top:1px;">!</span><span class="ct">70만 원대 이하 좋은 매물 기다려야</span></div>
+  <div class="pr"><span style="color:#555;font-size:12px;">₩</span><span style="font-size:12px;font-weight:600;color:#d4d2cd;">70~85만 원</span></div></div><div id="c3" class="card"><div class="ch">
+    <span class="num" style="background:#0d2214;color:#3ca862;">3</span>
+    <span class="cn">Galaxy S25 FE</span>
+    <span class="badge" style="background:#0d2214;color:#3ca862;">가성비 안정판</span>
+  </div>
+  <div class="cr"><span style="color:#3ca862;font-size:12px;flex-shrink:0;margin-top:1px;">↑</span><span class="ct">7년 업데이트, 190g, Exynos 2400, 45W 충전, 국내 AS</span></div>
+  <div class="cr"><span style="color:#d4891c;font-size:12px;flex-shrink:0;margin-top:1px;">!</span><span class="ct">8GB RAM, FHD+ 1080p</span></div>
+  <div class="pr"><span style="color:#555;font-size:12px;">₩</span><span style="font-size:12px;font-weight:600;color:#d4d2cd;">60~75만 원</span></div></div><div id="c4" class="card"><div class="ch">
+    <span class="num" style="background:#1a1230;color:#9b7fe8;">4</span>
+    <span class="cn">Galaxy S25+</span>
+    <span class="badge" style="background:#1a1230;color:#9b7fe8;">상위 안정판</span>
+  </div>
+  <div class="cr"><span style="color:#3ca862;font-size:12px;flex-shrink:0;margin-top:1px;">↑</span><span class="ct">Snapdragon 8 Elite, 12GB RAM, 190g, 7년 업데이트</span></div>
+  <div class="cr"><span style="color:#d4891c;font-size:12px;flex-shrink:0;margin-top:1px;">!</span><span class="ct">S24+ 대비 가격 프리미엄 큼</span></div>
+  <div class="pr"><span style="color:#555;font-size:12px;">₩</span><span style="font-size:12px;font-weight:600;color:#d4d2cd;">80~95만 원</span></div></div><div id="c5" class="card"><div class="ch">
+    <span class="num" style="background:#2e1308;color:#e87f5a;">5</span>
+    <span class="cn">Galaxy S25 Edge</span>
+    <span class="badge" style="background:#2e1308;color:#e87f5a;">무게+편집 최적</span>
+  </div>
+  <div class="cr"><span style="color:#3ca862;font-size:12px;flex-shrink:0;margin-top:1px;">↑</span><span class="ct">163g, 12GB RAM, 8 Elite, QHD+ 평면, 7년 업데이트</span></div>
+  <div class="cr"><span style="color:#d4891c;font-size:12px;flex-shrink:0;margin-top:1px;">!</span><span class="ct">배터리 3900mAh (서브폰 무영향), 망원 없음 (촬영 안 함)</span></div>
+  <div class="pr"><span style="color:#555;font-size:12px;">₩</span><span style="font-size:12px;font-weight:600;color:#d4d2cd;">80~100만 원</span></div></div><div id="c6" class="card"><div class="ch">
+    <span class="num" style="background:#082232;color:#5ac8e8;">6</span>
+    <span class="cn">Galaxy S26+</span>
+    <span class="badge" style="background:#082232;color:#5ac8e8;">최신 안정판</span>
+  </div>
+  <div class="cr"><span style="color:#3ca862;font-size:12px;flex-shrink:0;margin-top:1px;">↑</span><span class="ct">최신 삼성 AI·갤러리, 7년 업데이트, 190g</span></div>
+  <div class="cr"><span style="color:#d4891c;font-size:12px;flex-shrink:0;margin-top:1px;">!</span><span class="ct">중고 매물 아직 얕음, 기다려야</span></div>
+  <div class="pr"><span style="color:#555;font-size:12px;">₩</span><span style="font-size:12px;font-weight:600;color:#d4d2cd;">110~130만 원</span></div></div><div id="c7" class="card"><div class="ch">
+    <span class="num" style="background:#2e0f0f;color:#d94a4a;">7</span>
+    <span class="cn">Nothing Phone 3</span>
+    <span class="badge" style="background:#2e0f0f;color:#d94a4a;">감성 예외</span>
+  </div>
+  <div class="cr"><span style="color:#3ca862;font-size:12px;flex-shrink:0;margin-top:1px;">↑</span><span class="ct">디자인 신선함, 16GB RAM, Glyph Matrix</span></div>
+  <div class="cr"><span style="color:#d4891c;font-size:12px;flex-shrink:0;margin-top:1px;">!</span><span class="ct">218g (노트20 울트라보다 무거움), 삼성 리마스터 없음, 국내 미출시·AS 없음</span></div>
+  <div class="pr"><span style="color:#555;font-size:12px;">₩</span><span style="font-size:12px;font-weight:600;color:#d4d2cd;">65~80만 원 (직구)</span></div></div><div id="c8" class="card"><div class="ch">
+    <span class="num" style="background:#0d2222;color:#3ca8a8;">8</span>
+    <span class="cn">Pixel 10 Pro</span>
+    <span class="badge" style="background:#0d2222;color:#3ca8a8;">사진 AI형</span>
+  </div>
+  <div class="cr"><span style="color:#3ca862;font-size:12px;flex-shrink:0;margin-top:1px;">↑</span><span class="ct">Google Photos AI·편집 최고, 16GB RAM, 7년 업데이트, 국내 AS</span></div>
+  <div class="cr"><span style="color:#d4891c;font-size:12px;flex-shrink:0;margin-top:1px;">!</span><span class="ct">6.3" 소형 폼팩터, 배터리 열화 초기 결함 보고</span></div>
+  <div class="pr"><span style="color:#555;font-size:12px;">₩</span><span style="font-size:12px;font-weight:600;color:#d4d2cd;">95~110만 원</span></div></div></div>
+  <div class="flow-box">
+    <p class="flow-title">의사결정 흐름 — 클릭하면 해당 카드 강조</p>
+    <div class="fl" id="flowList"><button class="fb"><span class="fn">1</span><span style="font-size:12px;color:#888;flex:1;">70만 원대 매물 잡힘</span><span style="font-size:12px;color:#444;">→</span><span style="font-size:12px;font-weight:500;color:#4a90d9;">S24+ 512GB 중고</span></button><button class="fb"><span class="fn">2</span><span style="font-size:12px;color:#888;flex:1;">무게 최우선 + 사진 편집 집중</span><span style="font-size:12px;color:#444;">→</span><span style="font-size:12px;font-weight:500;color:#4a90d9;">S25 Edge 512GB</span></button><button class="fb"><span class="fn">3</span><span style="font-size:12px;color:#888;flex:1;">가성비 + 7년 업데이트</span><span style="font-size:12px;color:#444;">→</span><span style="font-size:12px;font-weight:500;color:#4a90d9;">S25 FE 512GB</span></button><button class="fb"><span class="fn">4</span><span style="font-size:12px;color:#888;flex:1;">최저 가성비</span><span style="font-size:12px;color:#444;">→</span><span style="font-size:12px;font-weight:500;color:#4a90d9;">S23+ 512GB 중고</span></button><button class="fb"><span class="fn">5</span><span style="font-size:12px;color:#888;flex:1;">돈으로 끝내기</span><span style="font-size:12px;color:#444;">→</span><span style="font-size:12px;font-weight:500;color:#4a90d9;">S26+ 512GB 특가</span></button><button class="fb"><span class="fn">6</span><span style="font-size:12px;color:#888;flex:1;">감성 예외</span><span style="font-size:12px;color:#444;">→</span><span style="font-size:12px;font-weight:500;color:#4a90d9;">Nothing 3 / Pixel 10 Pro</span></button><button class="fb"><span class="fn">7</span><span style="font-size:12px;color:#888;flex:1;">가격 내려올 때만</span><span style="font-size:12px;color:#444;">→</span><span style="font-size:12px;font-weight:500;color:#4a90d9;">Pixel 10 Pro / S25 Edge</span></button></div>
+  </div>
+</div>
+
+<div id="tab-compare" class="tab-content">
+  <div id="barSection"><div class="sec"><p class="sh">AnTuTu 성능 (참고치 · 단위: 만 점)</p><p class="sd">높을수록 GPU·AI 처리 빠름 — 사진 편집 앱, AI 기능에 직결. Tensor G5(Pixel)는 타사 대비 약함</p><div class="br"><span class="bn">S23+</span><div class="bb"><div class="bf" style="width:17%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">150만</span></div><div class="br"><span class="bn">S24+</span><div class="bb"><div class="bf" style="width:42%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">180만</span></div><div class="br"><span class="bn">S25 FE</span><div class="bb"><div class="bf" style="width:33%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">170만</span></div><div class="br"><span class="bn">S25+</span><div class="bb"><div class="bf" style="width:83%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">230만</span></div><div class="br"><span class="bn">S25 Edge</span><div class="bb"><div class="bf" style="width:67%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">210만</span></div><div class="br"><span class="bn">S26+</span><div class="bb"><div class="bf" style="width:100%;background:#3ca862;"></div></div><span class="bv" style="color:#3ca862;">250만</span></div><div class="br"><span class="bn">NP3</span><div class="bb"><div class="bf" style="width:17%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">150만</span></div><div class="br"><span class="bn">Pixel 10P</span><div class="bb"><div class="bf" style="width:3%;background:#d94a4a;"></div></div><span class="bv" style="color:#d94a4a;">130만</span></div></div><div class="sec"><p class="sh">RAM</p><p class="sd">높을수록 멀티태스킹 안정. 8GB는 장시간 편집 앱+회사앱 동시 운용 시 약점. 12GB 이상이면 서브폰 기준 충분</p><div class="br"><span class="bn">S23+</span><div class="bb"><div class="bf" style="width:3%;background:#d94a4a;"></div></div><span class="bv" style="color:#d94a4a;">8GB</span></div><div class="br"><span class="bn">S24+</span><div class="bb"><div class="bf" style="width:50%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">12GB</span></div><div class="br"><span class="bn">S25 FE</span><div class="bb"><div class="bf" style="width:3%;background:#d94a4a;"></div></div><span class="bv" style="color:#d94a4a;">8GB</span></div><div class="br"><span class="bn">S25+</span><div class="bb"><div class="bf" style="width:50%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">12GB</span></div><div class="br"><span class="bn">S25 Edge</span><div class="bb"><div class="bf" style="width:50%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">12GB</span></div><div class="br"><span class="bn">S26+</span><div class="bb"><div class="bf" style="width:50%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">12GB</span></div><div class="br"><span class="bn">NP3</span><div class="bb"><div class="bf" style="width:100%;background:#3ca862;"></div></div><span class="bv" style="color:#3ca862;">16GB</span></div><div class="br"><span class="bn">Pixel 10P</span><div class="bb"><div class="bf" style="width:100%;background:#3ca862;"></div></div><span class="bv" style="color:#3ca862;">16GB</span></div></div><div class="sec"><p class="sh">무게 — 가벼울수록 높은 바</p><p class="sd">노트20 울트라 208g 기준. S25 Edge 163g은 45g 감량. NP3 218g은 오히려 더 무거움</p><div class="br"><span class="bn">S23+</span><div class="bb"><div class="bf" style="width:40%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">196g</span></div><div class="br"><span class="bn">S24+</span><div class="bb"><div class="bf" style="width:40%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">196g</span></div><div class="br"><span class="bn">S25 FE</span><div class="bb"><div class="bf" style="width:51%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">190g</span></div><div class="br"><span class="bn">S25+</span><div class="bb"><div class="bf" style="width:51%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">190g</span></div><div class="br"><span class="bn">S25 Edge</span><div class="bb"><div class="bf" style="width:100%;background:#3ca862;"></div></div><span class="bv" style="color:#3ca862;">163g</span></div><div class="br"><span class="bn">S26+</span><div class="bb"><div class="bf" style="width:51%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">190g</span></div><div class="br"><span class="bn">NP3</span><div class="bb"><div class="bf" style="width:3%;background:#d94a4a;"></div></div><span class="bv" style="color:#d94a4a;">218g</span></div><div class="br"><span class="bn">Pixel 10P</span><div class="bb"><div class="bf" style="width:20%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">207g</span></div></div><div class="sec"><p class="sh">두께 — 얇을수록 높은 바</p><p class="sd">S25 Edge 5.8mm 압도적. NP3 9.0mm 가장 두꺼움</p><div class="br"><span class="bn">S23+</span><div class="bb"><div class="bf" style="width:44%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">7.6mm</span></div><div class="br"><span class="bn">S24+</span><div class="bb"><div class="bf" style="width:41%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">7.7mm</span></div><div class="br"><span class="bn">S25 FE</span><div class="bb"><div class="bf" style="width:50%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">7.4mm</span></div><div class="br"><span class="bn">S25+</span><div class="bb"><div class="bf" style="width:53%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">7.3mm</span></div><div class="br"><span class="bn">S25 Edge</span><div class="bb"><div class="bf" style="width:100%;background:#3ca862;"></div></div><span class="bv" style="color:#3ca862;">5.8mm</span></div><div class="br"><span class="bn">S26+</span><div class="bb"><div class="bf" style="width:53%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">7.3mm</span></div><div class="br"><span class="bn">NP3</span><div class="bb"><div class="bf" style="width:3%;background:#d94a4a;"></div></div><span class="bv" style="color:#d94a4a;">9mm</span></div><div class="br"><span class="bn">Pixel 10P</span><div class="bb"><div class="bf" style="width:13%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">8.6mm</span></div></div><div class="sec"><p class="sh">배터리 용량</p><p class="sd">서브폰이라 배터리 압박 낮음. S25 Edge 3900mAh는 충전 루틴 있으면 무관</p><div class="br"><span class="bn">S23+</span><div class="bb"><div class="bf" style="width:64%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">4700mAh</span></div><div class="br"><span class="bn">S24+</span><div class="bb"><div class="bf" style="width:80%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">4900mAh</span></div><div class="br"><span class="bn">S25 FE</span><div class="bb"><div class="bf" style="width:80%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">4900mAh</span></div><div class="br"><span class="bn">S25+</span><div class="bb"><div class="bf" style="width:80%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">4900mAh</span></div><div class="br"><span class="bn">S25 Edge</span><div class="bb"><div class="bf" style="width:3%;background:#d94a4a;"></div></div><span class="bv" style="color:#d94a4a;">3900mAh</span></div><div class="br"><span class="bn">S26+</span><div class="bb"><div class="bf" style="width:80%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">4900mAh</span></div><div class="br"><span class="bn">NP3</span><div class="bb"><div class="bf" style="width:100%;background:#3ca862;"></div></div><span class="bv" style="color:#3ca862;">5150mAh</span></div><div class="br"><span class="bn">Pixel 10P</span><div class="bb"><div class="bf" style="width:78%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">4870mAh</span></div></div><div class="sec"><p class="sh">충전 속도</p><p class="sd">빠를수록 좋음. S25 Edge 25W가 유일한 단점</p><div class="br"><span class="bn">S23+</span><div class="bb"><div class="bf" style="width:50%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">45W</span></div><div class="br"><span class="bn">S24+</span><div class="bb"><div class="bf" style="width:50%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">45W</span></div><div class="br"><span class="bn">S25 FE</span><div class="bb"><div class="bf" style="width:50%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">45W</span></div><div class="br"><span class="bn">S25+</span><div class="bb"><div class="bf" style="width:50%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">45W</span></div><div class="br"><span class="bn">S25 Edge</span><div class="bb"><div class="bf" style="width:3%;background:#d94a4a;"></div></div><span class="bv" style="color:#d94a4a;">25W</span></div><div class="br"><span class="bn">S26+</span><div class="bb"><div class="bf" style="width:50%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">45W</span></div><div class="br"><span class="bn">NP3</span><div class="bb"><div class="bf" style="width:100%;background:#3ca862;"></div></div><span class="bv" style="color:#3ca862;">65W</span></div><div class="br"><span class="bn">Pixel 10P</span><div class="bb"><div class="bf" style="width:13%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">30W</span></div></div><div class="sec"><p class="sh">OS 업데이트 잔여 기간 (2026년 기준)</p><p class="sd">S23+는 Android 17이 마지막 — 1~2년 남음. 나머지 7년 세대는 5~7년 남음</p><div class="br"><span class="bn">S23+</span><div class="bb"><div class="bf" style="width:3%;background:#d94a4a;"></div></div><span class="bv" style="color:#d94a4a;">1년</span></div><div class="br"><span class="bn">S24+</span><div class="bb"><div class="bf" style="width:67%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">5년</span></div><div class="br"><span class="bn">S25 FE</span><div class="bb"><div class="bf" style="width:83%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">6년</span></div><div class="br"><span class="bn">S25+</span><div class="bb"><div class="bf" style="width:83%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">6년</span></div><div class="br"><span class="bn">S25 Edge</span><div class="bb"><div class="bf" style="width:83%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">6년</span></div><div class="br"><span class="bn">S26+</span><div class="bb"><div class="bf" style="width:100%;background:#3ca862;"></div></div><span class="bv" style="color:#3ca862;">7년</span></div><div class="br"><span class="bn">NP3</span><div class="bb"><div class="bf" style="width:50%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">4년</span></div><div class="br"><span class="bn">Pixel 10P</span><div class="bb"><div class="bf" style="width:83%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">6년</span></div></div><div class="sec"><p class="sh">지원 현황</p><p class="sd">삼성 리마스터(갤러리 AI 재처리) · 한국 공식 AS · Pixel 독점 Google AI 편집</p><div class="sr"><span style="font-size:12px;font-weight:500;color:#ddd;width:76px;flex-shrink:0;">S23+</span><div style="display:flex;gap:14px;flex-wrap:wrap;"><span style="font-size:11px;color:#3ca862;">리마스터 ✓</span><span style="font-size:11px;color:#3ca862;">AS ✓</span><span style="font-size:11px;color:#444;">Pixel AI —</span></div></div><div class="sr"><span style="font-size:12px;font-weight:500;color:#ddd;width:76px;flex-shrink:0;">S24+</span><div style="display:flex;gap:14px;flex-wrap:wrap;"><span style="font-size:11px;color:#3ca862;">리마스터 ✓</span><span style="font-size:11px;color:#3ca862;">AS ✓</span><span style="font-size:11px;color:#444;">Pixel AI —</span></div></div><div class="sr"><span style="font-size:12px;font-weight:500;color:#ddd;width:76px;flex-shrink:0;">S25 FE</span><div style="display:flex;gap:14px;flex-wrap:wrap;"><span style="font-size:11px;color:#3ca862;">리마스터 ✓</span><span style="font-size:11px;color:#3ca862;">AS ✓</span><span style="font-size:11px;color:#444;">Pixel AI —</span></div></div><div class="sr"><span style="font-size:12px;font-weight:500;color:#ddd;width:76px;flex-shrink:0;">S25+</span><div style="display:flex;gap:14px;flex-wrap:wrap;"><span style="font-size:11px;color:#3ca862;">리마스터 ✓</span><span style="font-size:11px;color:#3ca862;">AS ✓</span><span style="font-size:11px;color:#444;">Pixel AI —</span></div></div><div class="sr"><span style="font-size:12px;font-weight:500;color:#ddd;width:76px;flex-shrink:0;">S25 Edge</span><div style="display:flex;gap:14px;flex-wrap:wrap;"><span style="font-size:11px;color:#3ca862;">리마스터 ✓</span><span style="font-size:11px;color:#3ca862;">AS ✓</span><span style="font-size:11px;color:#444;">Pixel AI —</span></div></div><div class="sr"><span style="font-size:12px;font-weight:500;color:#ddd;width:76px;flex-shrink:0;">S26+</span><div style="display:flex;gap:14px;flex-wrap:wrap;"><span style="font-size:11px;color:#3ca862;">리마스터 ✓</span><span style="font-size:11px;color:#3ca862;">AS ✓</span><span style="font-size:11px;color:#444;">Pixel AI —</span></div></div><div class="sr"><span style="font-size:12px;font-weight:500;color:#ddd;width:76px;flex-shrink:0;">NP3</span><div style="display:flex;gap:14px;flex-wrap:wrap;"><span style="font-size:11px;color:#d94a4a;">리마스터 ✕</span><span style="font-size:11px;color:#d94a4a;">AS ✕</span><span style="font-size:11px;color:#444;">Pixel AI —</span></div></div><div class="sr"><span style="font-size:12px;font-weight:500;color:#ddd;width:76px;flex-shrink:0;">Pixel 10P</span><div style="display:flex;gap:14px;flex-wrap:wrap;"><span style="font-size:11px;color:#d94a4a;">리마스터 ✕</span><span style="font-size:11px;color:#3ca862;">AS ✓</span><span style="font-size:11px;color:#3ca862;">Pixel AI ✓</span></div></div></div><div class="sec"><p class="sh">중고 매수선 — 저렴할수록 높은 바</p><p class="sd">서브폰 스윗스팟 70~90만 원대. S26+는 매물 부족으로 고점</p><div class="br"><span class="bn">S23+</span><div class="bb"><div class="bf" style="width:100%;background:#3ca862;"></div></div><span class="bv" style="color:#3ca862;">50만</span></div><div class="br"><span class="bn">S24+</span><div class="bb"><div class="bf" style="width:61%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">77만</span></div><div class="br"><span class="bn">S25 FE</span><div class="bb"><div class="bf" style="width:76%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">67만</span></div><div class="br"><span class="bn">S25+</span><div class="bb"><div class="bf" style="width:47%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">87만</span></div><div class="br"><span class="bn">S25 Edge</span><div class="bb"><div class="bf" style="width:43%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">90만</span></div><div class="br"><span class="bn">S26+</span><div class="bb"><div class="bf" style="width:3%;background:#d94a4a;"></div></div><span class="bv" style="color:#d94a4a;">120만</span></div><div class="br"><span class="bn">NP3</span><div class="bb"><div class="bf" style="width:69%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">72만</span></div><div class="br"><span class="bn">Pixel 10P</span><div class="bb"><div class="bf" style="width:26%;background:#4a90d9;"></div></div><span class="bv" style="color:#888;">102만</span></div></div></div>
+</div>
+
+<div id="tab-radar" class="tab-content">
+  <h2>비교할 기기 선택</h2>
+  <div class="tw" id="togWrap"><button class="tog">S23+</button><button class="tog on" style="background: rgb(74, 144, 217); color: rgb(15, 15, 17);">S24+</button><button class="tog">S25 FE</button><button class="tog">S25+</button><button class="tog on" style="background: rgb(232, 127, 90); color: rgb(15, 15, 17);">S25 Edge</button><button class="tog">S26+</button><button class="tog">NP3</button><button class="tog">Pixel 10P</button></div>
+  <div class="chart-wrap">
+    <div class="chart-box"><canvas id="radar" width="310" height="310" style="display: block; box-sizing: border-box; height: 310px; width: 310px;"></canvas></div>
+    <div>
+      <p style="font-size:11px;color:#555;text-transform:uppercase;letter-spacing:.3px;margin-bottom:10px;">점수 기준 (5점 만점)</p>
+      <div style="margin-bottom:1.25rem;">
+        <div style="display:flex;gap:8px;margin-bottom:6px;"><span style="font-size:12px;color:#aaa;width:110px;flex-shrink:0;">① 실무</span><span style="font-size:11px;color:#555;line-height:1.5;">회사앱·안드오토 안정성, 삼성 리마스터 지원</span></div>
+        <div style="display:flex;gap:8px;margin-bottom:6px;"><span style="font-size:12px;color:#aaa;width:110px;flex-shrink:0;">② 사진 편집</span><span style="font-size:11px;color:#555;line-height:1.5;">RAM·GPU, 디스플레이 색정확도, AI 편집 기능</span></div>
+        <div style="display:flex;gap:8px;margin-bottom:6px;"><span style="font-size:12px;color:#aaa;width:110px;flex-shrink:0;">③ 손맛</span><span style="font-size:11px;color:#555;line-height:1.5;">무게·두께 (가벼울수록 고점)</span></div>
+        <div style="display:flex;gap:8px;margin-bottom:6px;"><span style="font-size:12px;color:#aaa;width:110px;flex-shrink:0;">④ OS 수명</span><span style="font-size:11px;color:#555;line-height:1.5;">남은 업데이트 기간 기준</span></div>
+        <div style="display:flex;gap:8px;margin-bottom:14px;"><span style="font-size:12px;color:#aaa;width:110px;flex-shrink:0;">⑤ 가성비</span><span style="font-size:11px;color:#555;line-height:1.5;">중고 가격 대비 스펙 밸류</span></div>
+      </div>
+      <div id="radarLegend">
+    <div class="li">
+      <div class="ld" style="background:#4a90d9;"></div>
+      <div>
+        <span style="font-size:13px;font-weight:500;color:#ccc;">Galaxy S24+</span>
+        <span style="font-size:10px;padding:1px 7px;border-radius:10px;background:#0a1f35;color:#4a90d9;margin-left:6px;">현실적 정답</span>
+        <p style="font-size:11px;color:#555;margin-top:3px;">실무 <strong style="color:#888">5</strong> · 사진편집 <strong style="color:#888">4</strong> · 손맛 <strong style="color:#888">3</strong> · OS수명 <strong style="color:#888">5</strong> · 가성비 <strong style="color:#888">4</strong></p>
+      </div>
+    </div>
+    <div class="li">
+      <div class="ld" style="background:#e87f5a;"></div>
+      <div>
+        <span style="font-size:13px;font-weight:500;color:#ccc;">Galaxy S25 Edge</span>
+        <span style="font-size:10px;padding:1px 7px;border-radius:10px;background:#2e1308;color:#e87f5a;margin-left:6px;">무게+편집 최적</span>
+        <p style="font-size:11px;color:#555;margin-top:3px;">실무 <strong style="color:#888">5</strong> · 사진편집 <strong style="color:#888">5</strong> · 손맛 <strong style="color:#888">5</strong> · OS수명 <strong style="color:#888">5</strong> · 가성비 <strong style="color:#888">3</strong></p>
+      </div>
+    </div></div>
+    </div>
+  </div>
+</div>
+
+<script src="./index_files/chart.umd.min.js"></script>
+<script>
+const P=[
+  {id:1,n:'Galaxy S23+',s:'S23+',col:'#d4891c',tBg:'#2e1f08',tC:'#d4891c',tag:'가성비 중고',
+   pros:'SD 8 Gen 2, 삼성 리마스터, 회사앱 안정성',
+   cons:'7년 업데이트 세대 아님 (Android 17 종료), 8GB RAM',
+   price:'45~55만 원',
+   antutu:150,ram:8,wt:196,th:7.6,bat:4700,chg:45,os:1,rm:1,as:1,ai:0,px:50,
+   scores:[4,3,3,2,5]},
+  {id:2,n:'Galaxy S24+',s:'S24+',col:'#4a90d9',tBg:'#0a1f35',tC:'#4a90d9',tag:'현실적 정답',feat:true,
+   pros:'12GB RAM, 7년 업데이트, 삼성 AI·리마스터, 실무 안정성 최고',
+   cons:'70만 원대 이하 좋은 매물 기다려야',
+   price:'70~85만 원',
+   antutu:180,ram:12,wt:196,th:7.7,bat:4900,chg:45,os:5,rm:1,as:1,ai:0,px:77,
+   scores:[5,4,3,5,4]},
+  {id:3,n:'Galaxy S25 FE',s:'S25 FE',col:'#3ca862',tBg:'#0d2214',tC:'#3ca862',tag:'가성비 안정판',
+   pros:'7년 업데이트, 190g, Exynos 2400, 45W 충전, 국내 AS',
+   cons:'8GB RAM, FHD+ 1080p',
+   price:'60~75만 원',
+   antutu:170,ram:8,wt:190,th:7.4,bat:4900,chg:45,os:6,rm:1,as:1,ai:0,px:67,
+   scores:[4,3,3,5,5]},
+  {id:4,n:'Galaxy S25+',s:'S25+',col:'#9b7fe8',tBg:'#1a1230',tC:'#9b7fe8',tag:'상위 안정판',
+   pros:'Snapdragon 8 Elite, 12GB RAM, 190g, 7년 업데이트',
+   cons:'S24+ 대비 가격 프리미엄 큼',
+   price:'80~95만 원',
+   antutu:230,ram:12,wt:190,th:7.3,bat:4900,chg:45,os:6,rm:1,as:1,ai:0,px:87,
+   scores:[5,4,3,5,3]},
+  {id:5,n:'Galaxy S25 Edge',s:'S25 Edge',col:'#e87f5a',tBg:'#2e1308',tC:'#e87f5a',tag:'무게+편집 최적',
+   pros:'163g, 12GB RAM, 8 Elite, QHD+ 평면, 7년 업데이트',
+   cons:'배터리 3900mAh (서브폰 무영향), 망원 없음 (촬영 안 함)',
+   price:'80~100만 원',
+   antutu:210,ram:12,wt:163,th:5.8,bat:3900,chg:25,os:6,rm:1,as:1,ai:0,px:90,
+   scores:[5,5,5,5,3]},
+  {id:6,n:'Galaxy S26+',s:'S26+',col:'#5ac8e8',tBg:'#082232',tC:'#5ac8e8',tag:'최신 안정판',
+   pros:'최신 삼성 AI·갤러리, 7년 업데이트, 190g',
+   cons:'중고 매물 아직 얕음, 기다려야',
+   price:'110~130만 원',
+   antutu:250,ram:12,wt:190,th:7.3,bat:4900,chg:45,os:7,rm:1,as:1,ai:0,px:120,
+   scores:[5,5,3,5,2]},
+  {id:7,n:'Nothing Phone 3',s:'NP3',col:'#d94a4a',tBg:'#2e0f0f',tC:'#d94a4a',tag:'감성 예외',
+   pros:'디자인 신선함, 16GB RAM, Glyph Matrix',
+   cons:'218g (노트20 울트라보다 무거움), 삼성 리마스터 없음, 국내 미출시·AS 없음',
+   price:'65~80만 원 (직구)',
+   antutu:150,ram:16,wt:218,th:9.0,bat:5150,chg:65,os:4,rm:0,as:0,ai:0,px:72,
+   scores:[3,3,1,4,3]},
+  {id:8,n:'Pixel 10 Pro',s:'Pixel 10P',col:'#3ca8a8',tBg:'#0d2222',tC:'#3ca8a8',tag:'사진 AI형',
+   pros:'Google Photos AI·편집 최고, 16GB RAM, 7년 업데이트, 국내 AS',
+   cons:'6.3" 소형 폼팩터, 배터리 열화 초기 결함 보고',
+   price:'95~110만 원',
+   antutu:130,ram:16,wt:207,th:8.6,bat:4870,chg:30,os:6,rm:0,as:1,ai:1,px:102,
+   scores:[4,5,2,5,3]},
+];
+
+const FLOW=[
+  {ids:[2],label:'70만 원대 매물 잡힘',dest:'S24+ 512GB 중고'},
+  {ids:[5],label:'무게 최우선 + 사진 편집 집중',dest:'S25 Edge 512GB'},
+  {ids:[3],label:'가성비 + 7년 업데이트',dest:'S25 FE 512GB'},
+  {ids:[1],label:'최저 가성비',dest:'S23+ 512GB 중고'},
+  {ids:[6],label:'돈으로 끝내기',dest:'S26+ 512GB 특가'},
+  {ids:[7,8],label:'감성 예외',dest:'Nothing 3 / Pixel 10 Pro'},
+  {ids:[8,5],label:'가격 내려올 때만',dest:'Pixel 10 Pro / S25 Edge'},
+];
+
+// 카드
+const cg=document.getElementById('cardGrid');
+P.forEach(p=>{
+  const c=document.createElement('div');
+  c.id='c'+p.id;c.className='card'+(p.feat?' feat':'');
+  c.innerHTML=`<div class="ch">
+    <span class="num" style="background:${p.tBg};color:${p.tC};">${p.id}</span>
+    <span class="cn">${p.n}</span>
+    <span class="badge" style="background:${p.tBg};color:${p.tC};">${p.tag}</span>
+  </div>
+  <div class="cr"><span style="color:#3ca862;font-size:12px;flex-shrink:0;margin-top:1px;">↑</span><span class="ct">${p.pros}</span></div>
+  <div class="cr"><span style="color:#d4891c;font-size:12px;flex-shrink:0;margin-top:1px;">!</span><span class="ct">${p.cons}</span></div>
+  <div class="pr"><span style="color:#555;font-size:12px;">₩</span><span style="font-size:12px;font-weight:600;color:#d4d2cd;">${p.price}</span></div>`;
+  cg.appendChild(c);
+});
+
+// 흐름
+const fl=document.getElementById('flowList');
+FLOW.forEach((f,i)=>{
+  const b=document.createElement('button');
+  b.className='fb';
+  b.innerHTML=`<span class="fn">${i+1}</span><span style="font-size:12px;color:#888;flex:1;">${f.label}</span><span style="font-size:12px;color:#444;">→</span><span style="font-size:12px;font-weight:500;color:#4a90d9;">${f.dest}</span>`;
+  b.onclick=()=>{
+    P.forEach(p=>{
+      const el=document.getElementById('c'+p.id);
+      el.style.border=p.feat?'2px solid #4a90d9':'1px solid #2a2a2e';
+      el.style.transform='';
+    });
+    document.querySelectorAll('.fb').forEach(x=>x.classList.remove('act'));
+    b.classList.add('act');
+    f.ids.forEach(id=>{
+      const el=document.getElementById('c'+id);
+      if(el){el.style.border='2px solid #4a90d9';el.style.transform='translateY(-2px)';}
+    });
+  };
+  fl.appendChild(b);
+});
+
+// 바 차트
+const bs=document.getElementById('barSection');
+function mkBar(title,note,key,unit,rev){
+  const vals=P.map(p=>p[key]);
+  const mn=Math.min(...vals),mx=Math.max(...vals);
+  let h=`<div class="sec"><p class="sh">${title}</p><p class="sd">${note}</p>`;
+  P.forEach(p=>{
+    const v=p[key];
+    const pct=mn===mx?50:rev?Math.round((1-(v-mn)/(mx-mn))*100):Math.round((v-mn)/(mx-mn)*100);
+    const best=rev?(v===mn):(v===mx),worst=rev?(v===mx):(v===mn);
+    const fc=best?'#3ca862':worst?'#d94a4a':'#4a90d9';
+    const tc=best?'#3ca862':worst?'#d94a4a':'#888';
+    const dv=unit==='만'?v+'만':unit==='년'?v+'년':v+unit;
+    h+=`<div class="br"><span class="bn">${p.s}</span><div class="bb"><div class="bf" style="width:${Math.max(pct,3)}%;background:${fc};"></div></div><span class="bv" style="color:${tc};">${dv}</span></div>`;
+  });
+  return h+'</div>';
+}
+function mkSupport(){
+  let h=`<div class="sec"><p class="sh">지원 현황</p><p class="sd">삼성 리마스터(갤러리 AI 재처리) · 한국 공식 AS · Pixel 독점 Google AI 편집</p>`;
+  P.forEach(p=>{
+    const rm=p.rm?'<span style="font-size:11px;color:#3ca862;">리마스터 ✓</span>':'<span style="font-size:11px;color:#d94a4a;">리마스터 ✕</span>';
+    const as=p.as?'<span style="font-size:11px;color:#3ca862;">AS ✓</span>':'<span style="font-size:11px;color:#d94a4a;">AS ✕</span>';
+    const ai=p.ai?'<span style="font-size:11px;color:#3ca862;">Pixel AI ✓</span>':'<span style="font-size:11px;color:#444;">Pixel AI —</span>';
+    h+=`<div class="sr"><span style="font-size:12px;font-weight:500;color:#ddd;width:76px;flex-shrink:0;">${p.s}</span><div style="display:flex;gap:14px;flex-wrap:wrap;">${rm}${as}${ai}</div></div>`;
+  });
+  return h+'</div>';
+}
+bs.innerHTML=
+  mkBar('AnTuTu 성능 (참고치 · 단위: 만 점)','높을수록 GPU·AI 처리 빠름 — 사진 편집 앱, AI 기능에 직결. Tensor G5(Pixel)는 타사 대비 약함','antutu','만',false)+
+  mkBar('RAM','높을수록 멀티태스킹 안정. 8GB는 장시간 편집 앱+회사앱 동시 운용 시 약점. 12GB 이상이면 서브폰 기준 충분','ram','GB',false)+
+  mkBar('무게 — 가벼울수록 높은 바','노트20 울트라 208g 기준. S25 Edge 163g은 45g 감량. NP3 218g은 오히려 더 무거움','wt','g',true)+
+  mkBar('두께 — 얇을수록 높은 바','S25 Edge 5.8mm 압도적. NP3 9.0mm 가장 두꺼움','th','mm',true)+
+  mkBar('배터리 용량','서브폰이라 배터리 압박 낮음. S25 Edge 3900mAh는 충전 루틴 있으면 무관','bat','mAh',false)+
+  mkBar('충전 속도','빠를수록 좋음. S25 Edge 25W가 유일한 단점','chg','W',false)+
+  mkBar('OS 업데이트 잔여 기간 (2026년 기준)','S23+는 Android 17이 마지막 — 1~2년 남음. 나머지 7년 세대는 5~7년 남음','os','년',false)+
+  mkSupport()+
+  mkBar('중고 매수선 — 저렴할수록 높은 바','서브폰 스윗스팟 70~90만 원대. S26+는 매물 부족으로 고점','px','만',true);
+
+// 레이더
+let act=new Set([2,5]);
+const tw=document.getElementById('togWrap');
+P.forEach(p=>{
+  const b=document.createElement('button');
+  b.className='tog'+(act.has(p.id)?' on':'');
+  b.textContent=p.s;
+  if(act.has(p.id)){b.style.background=p.col;b.style.color='#0f0f11';}
+  b.onclick=()=>{
+    if(act.has(p.id)){act.delete(p.id);b.classList.remove('on');b.style.background='#1a1a1e';b.style.color='#888';}
+    else{act.add(p.id);b.classList.add('on');b.style.background=p.col;b.style.color='#0f0f11';}
+    upRadar();
+  };
+  tw.appendChild(b);
+});
+
+const rCtx=document.getElementById('radar').getContext('2d');
+const rChart=new Chart(rCtx,{
+  type:'radar',
+  data:{labels:['실무','사진 편집','손맛','OS 수명','가성비'],datasets:[]},
+  options:{
+    responsive:false,
+    scales:{r:{min:0,max:5,ticks:{stepSize:1,display:false,backdropColor:'transparent'},grid:{color:'rgba(255,255,255,0.07)'},angleLines:{color:'rgba(255,255,255,0.07)'},pointLabels:{color:'#888',font:{size:11}}}},
+    plugins:{legend:{display:false}},
+    elements:{line:{borderWidth:2},point:{radius:3}}
+  }
+});
+
+function h2r(hex,a){const r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);return`rgba(${r},${g},${b},${a})`;}
+function upRadar(){
+  rChart.data.datasets=P.filter(p=>act.has(p.id)).map(p=>({
+    label:p.s,data:p.scores,borderColor:p.col,backgroundColor:h2r(p.col,.12),pointBackgroundColor:p.col
+  }));
+  rChart.update();
+  document.getElementById('radarLegend').innerHTML=P.filter(p=>act.has(p.id)).map(p=>`
+    <div class="li">
+      <div class="ld" style="background:${p.col};"></div>
+      <div>
+        <span style="font-size:13px;font-weight:500;color:#ccc;">${p.n}</span>
+        <span style="font-size:10px;padding:1px 7px;border-radius:10px;background:${p.tBg};color:${p.tC};margin-left:6px;">${p.tag}</span>
+        <p style="font-size:11px;color:#555;margin-top:3px;">${['실무','사진편집','손맛','OS수명','가성비'].map((ax,i)=>ax+' <strong style="color:#888">'+p.scores[i]+'</strong>').join(' · ')}</p>
+      </div>
+    </div>`).join('');
+}
+upRadar();
+
+// 탭
+function showTab(id,el){
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  el.classList.add('active');
+}
+</script>
+
+
+
+
+</body></html>
